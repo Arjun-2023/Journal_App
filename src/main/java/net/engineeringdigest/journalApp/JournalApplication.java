@@ -2,7 +2,7 @@ package net.engineeringdigest.journalApp;
 
 
 import com.mongodb.client.MongoDatabase;
-//import javafx.application.Platform;
+import javafx.application.Platform;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
