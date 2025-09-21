@@ -40,6 +40,7 @@ public class PublicUser {
 
     @GetMapping("/health-check")
     public String healthCheck(){
+        log.info("Health is okkk");
         return "ok";
     }
 
