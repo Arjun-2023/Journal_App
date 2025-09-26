@@ -1,6 +1,7 @@
 package net.engineeringdigest.journalApp.Controller;
 
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.engineeringdigest.journalApp.api.response.WeatherResponse;
 import net.engineeringdigest.journalApp.service.weatherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import net.engineeringdigest.journalApp.repository.UserRepository;
 //we use indexing in user with the help of @requestbody but its not used in journalentry here we use id also
 @RestController
 @RequestMapping("/user")
+@Tag(name = "User APIs", description = "Read, update and Delete User")
 public class UserController {
 
     @Autowired
